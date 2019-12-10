@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Validation form</title>
+</head>
+<body>
+<h1>registration message</h1>
+<form action="http://127.0.0.1:8080/register" method="post">
+    username：
+    <input type="text" name="username" id="username" />
+    <br />
+    password：
+    <input type="password" name="pwd" id="pwd" />
+    <br />
+    old：
+    <input type="text" name="age" id="age" />
+    <br />
+    sex：
+    <input type="radio" name="sex" value="male" checked="checked"/>man
+    <input type="radio" name="sex" value="female"/>woman
+    <br />
+    email：
+    <input type="text" name="email" id="email" />
+    <br />
+
+    phone number：
+    <input type="text" name="mobile" id="mobile" />
+    <br />
+    id card：
+    <input type="text" name="usercard" id="usercard">
+    <br>
+    Hobby：
+    <input type="checkbox" name="hobby" value="game" checked="checked"/>game
+    <input type="checkbox" name="hobby" value="girl" />sport
+    <input type="checkbox" name="hobby" value="money" />movie
+    <input type="checkbox" name="hobby" value="power" />reading
+    <br />
+    Education&nbsp&nbsp&nbsp：
+    <!--
+        selected="selected"
+    -->
+    <select name="xueli">
+        <option>--select--</option>
+        <option value="xiaoxue">primary school</option>
+        <option value="chuzhong">junior high school</option>
+        <option value="gaozhong">High school</option>
+        <option value="dazhuan" >College</option>
+        <option value="benke">Undergraduate</option>
+        <option value="shuoshi">master's degree</option>
+        <option value="boshi">PhD</option>
+    </select>
+    <br />
+    icon&nbsp&nbsp&nbsp：
+    <input type="file" name="myfile" />
+    <br />
+    Personal profile：
+    <br />
+    <textarea rows="8" cols="70"></textarea>
+    <br />
+
+    <input type="button" value="bottom" />
+    <input type="reset" value="rest"/>
+    <input type="image" src="img/qq.gif" />
+    <input type="submit" value="submit" />
+</form>
+</body>
+</html>
